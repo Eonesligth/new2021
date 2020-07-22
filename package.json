@@ -1,0 +1,16 @@
+{
+  "name": "practicas.2",
+  "version": "1.0.0",
+  "description": "segundo intento de practicas",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://eonesligth@bitbucket.org/eonesligth/practicas.2.git"
+  },
+  "author": "eonesligth",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/eonesligth/practicas.2#readme"
+}
