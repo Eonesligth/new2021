@@ -21,11 +21,19 @@ footer {
 }
 
 .card-pros {
-	flex: 1  150px;
-	padding-right: 2px 6px 2px 6px;
+	flex: 1  200px;
 	margin-top: 10px;
 }
 .btn-reserva {
 	width: 100%;
+	border-radius: 0px;
 
+}
+.footer-address-icon {
+	padding-right: 10px;
+}
+.card-img-top {
+width: 60px;
+height: 60px;
+object-fit: cover;
 }
