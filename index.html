@@ -45,6 +45,7 @@
         <li class="breadcrumb-item active" aria-current="page"> Home</li>
       </ol>
     </nav>
+
     <p>
   <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Compra PC</a>
   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Componentes</button>
@@ -83,6 +84,7 @@
 </div>
       
   </div>
+  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#contare">Mas informacion con la tienda</button>
     <div class="card-pros d-flex flex-column justify-content-between">
     <div class="card-pros d-flex flex-column justify-content-between">
      <div>
@@ -90,6 +92,38 @@
      
      <hr>
      <img src="imagenes/store.jpg" class="img-fluid" alt="Responsive image ">
+     
+
+
+
+<div class="modal fade" id="contare" tabindex="-1" aria-labelledby="contare" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contare">Contacta con la tienda</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Tu correo:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Mensaje:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-success">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
 <footer>
   <div class="row"> 
     <div class="col-sm-4 d-flex flex-column">
