@@ -47,9 +47,9 @@
     </nav>
 
     <p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Compra PC</a>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Componentes</button>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">extra</button>
+  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"data-toggle="tooltip" data-placement="top" title="Aqui puedes comprar tus computadoras">Compra PC</a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"data-toggle="tooltip" data-placement="top" title="Tenemos todo tipo de componentes" >Componentes</button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3"data-toggle="tooltip" data-placement="top" title="Servicios y otras cosas">extra</button>
 </p>
 <div class="row">
   <div class="col">
@@ -59,7 +59,8 @@
         <img class="card-img-top" src="imagenes/compu.png" alt="Responsive image">
             <p class="card-text">venta de computadores nuevos o usados, de todos los tipos y potencias, para asi de esta forma cumplir con su especificacaciones, tambien tenemos una seccion especial Gamer </p>
       </div>
-      <button class="btn btn-primary btn-reserva"><i class="fas fa-credit-card" style="color:red" ></i> comprar aqui </button>
+      <h5>                                                              </h5>
+      <button class="btn btn-primary btn-reserva"data-toggle="popover" data-placement="left" title="Pide" data-content="Los mejores Computadores disponibles"><i class="fas fa-credit-card" style="color:red" ></i> comprar aqui </button>
     </div>
   </div>
   <div class="col">
@@ -68,7 +69,7 @@
         <h3 class="card-title"> ventas de componentes</h3>       <img class="card-img-top" src="imagenes/componentes.png" alt="Responsive image">
     <p class="card-text"> componentes de toda clase, para todo tipo de computadores y todo tipos de marcas, para ventas al por mayor o al detal</p>
       </div>
-<button class="btn btn-primary btn-reserva"><i class="fas fa-money-bill-alt" style="color:black"></i> pidelos aqui</button>
+<button class="btn btn-warning btn-reserva" data-toggle="popover" data-placement="left"title="observalos" data-content="Todos los componentes que nesecitess" ><i class="fas fa-money-bill-alt" style="color:black"></i> pidelos aqui</button>
     </div>
   </div>
   <div class="row">
@@ -78,20 +79,20 @@
         <h3 class="card-title"> Compra de servicios </h3>    <img class="card-img-top" src="imagenes/servicio.png" alt="Responsive image">
     <p class="card-text"> servicios multiples, de facil acceso y con un acompañamiento constante para su aprovechamiento total, los servicios van con un seguimiento por parte de nosotros para su apoyo</p>
       </div>
-      <button class="btn btn-primary btn-reserva"><i class="fas fa-shopping-basket"></i> ordenalos aqui </button>
+      <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Ordena" data-content="Pide todos tus productos aqui" ><i class="fas fa-shopping-basket"></i> ordenalos aqui </button>
     </div>
   </div>
 </div>
       
   </div>
-  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#contare">Mas informacion con la tienda</button>
+  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#contare" data-toggle="tooltip" data-placement="top" title="Mas informacion Aqui">Mas informacion con la tienda</button>
     <div class="card-pros d-flex flex-column justify-content-between">
     <div class="card-pros d-flex flex-column justify-content-between">
      <div>
      </div>
      
      <hr>
-     <img src="imagenes/store.jpg" class="img-fluid" alt="Responsive image ">
+     <img src="imagenes/store.jpg" class="img-fluid" alt="Responsive image "  data-toggle="tooltip" data-placement="top" title="Instalaciones Con gran variedad de productos">
      
 
 
@@ -146,7 +147,15 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/Popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/Popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+    	$(function () {
+  $('[data-toggle="tooltip"]').tootlip()
+});
+    	$(function () {
+  $('[data-toggle="popover"]').popover()
+});
+    </script>
   </body>
 </html>

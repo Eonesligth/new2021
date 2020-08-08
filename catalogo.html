@@ -164,8 +164,16 @@
 </footer>   
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="node_modules/jQuery/dist/jQuery.min.js"></script>
-  <script src="node_modules/Popper.js/dist/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/Popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+  $('[data-toggle="tooltip"]').tootlip()
+});
+      $(function () {
+  $('[data-toggle="popover"]').popover()
+});
+    </script>
   </body>
 </html>
