@@ -1,5 +1,5 @@
 .jumbotron {
-	background-color: #2D83F4;
+	background-color: yellow;
 	margin-top: 50px;
 }
 
@@ -22,7 +22,7 @@ footer {
 
 .card-pros {
 	flex: 1  200px;
-	margin-top: 10px;
+	padding: 2px 5px 2px 5px;
 }
 .btn-reserva {
 	width: 100%;
