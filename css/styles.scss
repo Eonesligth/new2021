@@ -2,6 +2,7 @@ $yellow: #40FF00;
 $black: #848484;
 $blue:#2E64FE;
 
+
 @mixin margenes($top, $bottom){
     margin-top:$top;
     margin-bottom: $bottom;
@@ -9,7 +10,7 @@ $blue:#2E64FE;
 
 
 .jumbotron{
-    background-color: $yellow;
+    background-color: $blue;
     color: black;
     @include margenes (50px, 10px);
 }

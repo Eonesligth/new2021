@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "lite-server",
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev \"",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "scss": "node-sass -o css/ css/"
   },
   "repository": {
@@ -17,12 +19,15 @@
   "homepage": "https://bitbucket.org/eonesligth/practicas.2#readme",
   "devDependencies": {
     "lite-server": "^2.5.4",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "concurrently": "^5.3.0",
     "jquery": "^3.5.1",
     "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "rimraf": "^3.0.2"
   }
 }
