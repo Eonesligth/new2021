@@ -1,0 +1,38 @@
+.jumbotron {
+  background-color: #40FF00;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.card-pros {
+  flex: 1 200px;
+  padding: 2px 5px 2px 5px;
+}
+footer {
+  padding: 80px 40px 0 60px;
+  background-color: #A4A4A4;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-family: calibri;
+  font-size: 30px;
+}
+.btn-reserva {
+  width: 100%;
+  border-radius: 0px;
+}
+.footer-address-icon {
+  padding: 10px;
+}
+.tab-content {
+  padding-top: 10px;
+}
+.card-img-top {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.btn {
+  background-color: #2E64FE;
+  color: yellow;
+  font-family: arial;
+}

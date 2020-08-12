@@ -2,16 +2,14 @@
 @black: #848484;
 @blue:#2E64FE;
 
-.mixin margenes(@top: 0PX; @bottom: 0PX){
+.margenes(@top: 0px, @bottom: 0px){
     margin-top:@top;
-    margin-bottom: @bottom;
+    margin-bottom:@bottom;
 }
-
-
 .jumbotron{
     background-color: @yellow;
     color: black;
-    @include margenes (50px, 10px);
+    .margenes (50px, 10px);
 }
 
 .card-pros{
@@ -26,7 +24,7 @@ footer{
     margin-bottom: 0px;
     margin-top: 10px;
     font-family: calibri;
-   font-size: 30px;
+    font-size: 30px;
 }
 
 .btn-reserva{
@@ -47,7 +45,7 @@ height: 60px;
 object-fit: cover;
 }
 .btn {
-    background-color: $blue;
+    background-color: @blue;
     color: yellow;
     font-family: arial;
 }
