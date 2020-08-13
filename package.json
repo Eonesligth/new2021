@@ -8,7 +8,11 @@
     "dev": "lite-server",
     "start": "concurrently \"npm run watch:scss\" \"npm run dev \"",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "scss": "node-sass -o css/ css/"
+    "scss": "node-sass -o css/ css/",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin imagenes/* --out-dir=dist/images",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin catalogo.html -d dist --htmlmin -o dist/catalogo.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html && usemin dudas.html -d dist --htmlmin -o dist/dudas.html && usemin pqr.html -d dist --htmlmin -o dist/pqr.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -18,9 +22,16 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/eonesligth/practicas.2#readme",
   "devDependencies": {
+    "copyfiles": "^2.3.0",
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "imagemin": "^7.0.1",
+    "imagemin-cli": "^6.0.0",
     "lite-server": "^2.5.4",
     "node-sass": "^4.14.1",
-    "onchange": "^7.0.2"
+    "onchange": "^7.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
