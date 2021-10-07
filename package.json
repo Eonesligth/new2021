@@ -55,5 +55,8 @@
     "open-iconic": "^1.1.1",
     "popper.js": "^1.16.1",
     "rimraf": "^3.0.2"
-  }
+  },
+  "keywords": [
+    "great"
+  ]
 }
